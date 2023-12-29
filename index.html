@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renukoot Best online Food Delievry Platform | FunnyFood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1180px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Volkhov&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <img src="logo.jpeg" alt="MyOnlineMeal">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services-container">Services</a></li>
+            <li><a href="#client-container">Clients</a></li>
+            <li><a href="#form">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h_primary">Welcome To FunnyFood </h1>
+        <p class="para">Why only metro cities have all fun lets enjoy food at home with FunnyFood </p>
+        <p class="para">prices at very affordable range so what are you waiting for</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h_primary centre">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="photos/picture1.jpeg" alt="Order">
+                <h2 class="h_secondry">Food Ordering</h2>
+                <p class="centre" id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis odit
+                    perspiciatis,
+                    sint quisquam quidem consequuntur voluptates iusto, delectus illum labore dolor quo reprehenderit
+                    facere.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur laudantium
+                    dolores
+                    recusandae, eveniet quaerat officia pariatur ut adipisci blanditiis illum vitae. Deleniti ad dolores
+                    quod nobis consectetur explicabo ab deserunt culpa, inventore adipisci nihil?</p>
+                    <button id="btn1" class="btn" onclick="toglehide1()">Hide/Show</button>
+                
+            </div>
+            <div class=" box">
+                    <img src="photos/picture3.jpeg" alt="Catering">
+                    <h2 class="h_secondry">Food Catering</h2>
+                    <p class="centre" id="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis odit perspiciatis,
+                        sint quisquam quidem consequuntur voluptates iusto, delectus illum labore dolor quo
+                        reprehenderit
+                        facere.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur laudantium
+                        dolores
+                        recusandae, eveniet quaerat officia pariatur ut adipisci blanditiis illum vitae. Deleniti ad
+                        dolores
+                        quod nobis consectetur explicabo ab deserunt culpa, inventore adipisci nihil?</p>
+                        <button id="btn2" class="btn" onclick="toglehide2()">Hide/Show</button>
+                </div>
+                <div class="box">
+                    <img src="photos/picture2.jpeg" alt="Delivery">
+                    <h2 class="h_secondry">Food Delivery</h2>
+                    <p class="centre" id="para3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis odit perspiciatis,
+                        sint quisquam quidem consequuntur voluptates iusto, delectus illum labore dolor quo
+                        reprehenderit
+                        facere.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur laudantium
+                        dolores
+                        recusandae, eveniet quaerat officia pariatur ut adipisci blanditiis illum vitae. Deleniti ad
+                        dolores
+                        quod nobis consectetur explicabo ab deserunt culpa, inventore adipisci nihil?</p>
+                        <button id="btn3"  class="btn"  onclick="toglehide3()">Hide/Show</button>
+                </div>
+            </div>
+    </section>
+
+    <section id="client-container">
+        <h1 class="h_primary centre">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="photos/client1.jpeg" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="photos/client2.jpeg" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="photos/client4.jpeg" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="photos/client3.jpeg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="form">
+        <h1 id="h-last">Contact Us</h1>
+        <div id="contact-box">
+            <form action="backend.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="name" id="phone" placeholder="Enter your Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit Now" class="btn">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="centre">
+            Copyright &copy; www.FoodFun.com. All rights reserverd!
+        </div>
+    </footer>
+
+    <script>
+        function toglehide1(){
+            let btn = document.getElementById("btn1");
+            let para = document.getElementById("para1");
+            if (para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+            }
+        }
+        function toglehide2(){
+            let btn= document.getElementById("btn2");
+            let para = document.getElementById("para2");
+            if (para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+            }
+        }
+        function toglehide3(){
+            let btn= document.getElementById("btn3");
+            let para = document.getElementById("para3");
+            if (para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else {
+                para.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
